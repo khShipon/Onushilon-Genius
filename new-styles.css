@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+ 
+}
+
+.form-container-custom {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: auto;
+}
+
+.form-toggle-custom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle-custom button {
+    flex: 1;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-toggle-custom button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.form-toggle-custom button.active-custom {
+    background-color: #2980b9;
+}
+
+.form-custom {
+    display: none;
+}
+
+.form-custom.active-custom {
+    display: block;
+}
+
+.input-group-custom {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group-custom i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-group-custom input {
+    width: 80%;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group-custom input:focus {
+    border-color: #3498db;
+}
+
+.btn-custom {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #2980b9;
+}
+
+.switch-text-custom {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.switch-text-custom a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.switch-text-custom a:hover {
+    text-decoration: underline;
+}
+
+.hidden-custom {
+    display: none;
+}

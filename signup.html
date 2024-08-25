@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onushilon-Genius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="new-styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html"><img src="photos/logo.png"><h2>Onushilon <br> Genius</h2></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#courses" class="dropdown-toggle">Courses <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#ssc">SSC</a>
+                    <a href="#hsc">HSC</a>
+                    <a href="#spoken-english">Spoken English</a>
+                    <a href="#ielts">IELTS</a>
+                    <a href="#basic-computer">Basic Computer</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#courses" class="dropdown-toggle">IELTS <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#listening">Listening</a>
+                    <a href="#reading">Reading</a>
+                    <a href="#writing">Writing</a>
+                    <a href="#speaking">Speaking</a>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="signuplink" href="signup.html"><i class="fa-solid fa-user-plus"> Sign Up </i></a>
+        <div class="mobile-btn" id="mobile-btn">&#9776;</div>
+    </div>
+
+    <!-- News Headline Section -->
+    <div class="news-headline">
+        <span class="blinking">Notice:</span>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            ২০২৬ ব্যাচে ভর্তি হলেই থাকছে ৫০% ছাড়!
+        </marquee>
+    </div>
+
+    <!-- Sign-up & Login Section -->
+    <div class="form-container-custom">
+        <div class="form-toggle-custom">
+            <button id="signupBtnCustom" onclick="toggleFormCustom('signup')">Sign Up</button>
+            <button id="loginBtnCustom" onclick="toggleFormCustom('login')">Login</button>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signupFormCustom" class="form-custom">
+            <h2>Create an Account</h2>
+            <form>
+                <div class="input-group-custom">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group-custom">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group-custom">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group-custom">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn-custom">Sign Up</button>
+                <p class="switch-text-custom">Already have an account? <a href="#" onclick="toggleFormCustom('login')">Login here</a></p>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginFormCustom" class="form-custom hidden-custom">
+            <h2>Welcome Back</h2>
+            <form>
+                <div class="input-group-custom">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group-custom">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-custom">Login</button>
+                <p class="switch-text-custom">Don't have an account? <a href="#" onclick="toggleFormCustom('signup')">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
